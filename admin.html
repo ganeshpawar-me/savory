@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <!-- <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body,
+    html {
+      height: 100vh;
+       
+    }
+
+    .header-container {
+      font-size: 3em;
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid #999;
+        color : #e91e63;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row header-container">
+      <header>Today's Log</header>
+    </div>
+    <div class="right-align">
+      <a class='dropdown-button btn'  class="material-icons" href='#' data-activates='dropdown1'>info_outline</a>
+
+    <!-- Dropdown Structure -->
+    <ul id='dropdown1' class='dropdown-content'>
+      <li><a href="php/logout.php">Logout</a></li>
+    </ul>
+    </div>
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12 m6">
+            <input id="item1" type="text" >
+            <label for="item1">Item1</label>
+          </div>
+          <div class="input-field col s12 m6">
+            <input id="item2" type="text" >
+            <label for="item2">Item2</label>
+          </div>
+          <div class="input-field col s12 m6">
+            <input   id="item3" type="text" >
+            <label for="item3">Item3</label>
+          </div>
+          <div class="input-field col s12 m6">
+            <input  id="item4" type="text" >
+            <label for="item4">Item4</label>
+          </div>
+          <div class="input-field col s12 m6">
+            <input   id="item5" type="text" >
+            <label for="item5">Item5</label>
+          </div>
+          <div class="input-field col s12 m6">
+            <input   id="price" type="text" >
+            <label for="price">Price</label>
+          </div>
+					
+          <div class="input-field col s12 m6">
+            <textarea  id="note" class="materialize-textarea"></textarea>
+            <label for="note">Note</label>
+          </div>
+					
+					 <div class="input-field col s12 m6">
+            <input   id="type" type="text" placeholder="Lunch/Dinner" >
+            <label for="type">type</label>
+          </div>
+         
+
+        </div>
+        <div class="right-align">
+          <a class="waves-effect waves-light btn" id="update">Update</a>
+        </div>
+
+      </form>
+    </div>
+    <div id="feedback">
+
+    </div>
+  </div>
+  <!--Import jQuery before materialize.js-->
+  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/ajax.js"></script>
+</body>
+
+</html>
